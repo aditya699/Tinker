@@ -1,0 +1,129 @@
+{
+  "model": "meta-llama/Llama-3.2-1B",
+  "lora_rank": 32,
+  "learning_rate": 0.0001,
+  "num_epochs": 20,
+  "checkpoint_name": "mental_health_classifier",
+  "examples": [
+    {
+      "input": "I've been feeling really sad for weeks now. I don't enjoy things I used to love. I sleep too much and have no energy.",
+      "output": "Primary concern: Depression (Major Depressive Disorder)\nKey symptoms: Persistent sadness, loss of interest (anhedonia), hypersomnia, fatigue\nSeverity indicators: Symptoms lasting weeks\nRecommendation: Consider speaking with a mental health professional for proper evaluation."
+    },
+    {
+      "input": "I can't stop worrying about everything. My heart races, I feel dizzy, and I'm always on edge.",
+      "output": "Primary concern: Generalized Anxiety Disorder (GAD)\nKey symptoms: Excessive worry, physical symptoms (racing heart, dizziness), restlessness\nSeverity indicators: Chronic, pervasive worry\nRecommendation: Anxiety management techniques and professional consultation recommended."
+    },
+    {
+      "input": "Sometimes I feel extremely happy and energetic for days, barely need sleep. Then I crash into deep sadness.",
+      "output": "Primary concern: Bipolar Disorder (possible manic-depressive episodes)\nKey symptoms: Alternating periods of elevated mood/energy and depression\nSeverity indicators: Significant mood swings affecting functioning\nRecommendation: This pattern requires professional psychiatric evaluation."
+    },
+    {
+      "input": "I have intrusive thoughts that won't go away. I keep checking if I locked the door over and over.",
+      "output": "Primary concern: Obsessive-Compulsive Disorder (OCD)\nKey symptoms: Intrusive thoughts (obsessions), repetitive behaviors (compulsions - checking)\nSeverity indicators: Ritualistic behaviors interfering with daily life\nRecommendation: OCD responds well to specialized therapy (ERP). Seek professional help."
+    },
+    {
+      "input": "After the accident, I keep having nightmares and flashbacks. Loud noises make me panic.",
+      "output": "Primary concern: Post-Traumatic Stress Disorder (PTSD)\nKey symptoms: Re-experiencing trauma (nightmares, flashbacks), hyperarousal (startle response)\nSeverity indicators: Trauma-related symptoms affecting daily functioning\nRecommendation: Trauma-focused therapy with a qualified professional is important."
+    },
+    {
+      "input": "I avoid social situations because I'm terrified people will judge me. I get panic attacks before meetings.",
+      "output": "Primary concern: Social Anxiety Disorder\nKey symptoms: Fear of social evaluation, avoidance behaviors, panic symptoms in social contexts\nSeverity indicators: Significant impairment in social/occupational functioning\nRecommendation: Cognitive-behavioral therapy (CBT) is highly effective for social anxiety."
+    },
+    {
+      "input": "I can't focus on anything. My mind jumps from task to task and I'm always losing things.",
+      "output": "Primary concern: Attention-Deficit/Hyperactivity Disorder (ADHD) - Inattentive presentation\nKey symptoms: Difficulty sustaining attention, disorganization, forgetfulness\nSeverity indicators: Chronic attention difficulties affecting multiple areas\nRecommendation: Professional ADHD assessment can clarify diagnosis and treatment options."
+    },
+    {
+      "input": "I restrict my eating heavily and I'm terrified of gaining weight, even though people say I'm too thin.",
+      "output": "Primary concern: Anorexia Nervosa (Eating Disorder)\nKey symptoms: Restricted eating, intense fear of weight gain, possible body image distortion\nSeverity indicators: Physical health at risk\nRecommendation: URGENT - eating disorders require immediate medical and psychological intervention."
+    },
+    {
+      "input": "I eat huge amounts of food in secret and then force myself to vomit. I feel so ashamed.",
+      "output": "Primary concern: Bulimia Nervosa (Eating Disorder)\nKey symptoms: Binge eating episodes, purging behaviors, feelings of shame\nSeverity indicators: Cycle of binging and purging\nRecommendation: Eating disorders require specialized treatment. Please reach out to a professional."
+    },
+    {
+      "input": "I feel empty inside. My relationships are intense but unstable. Sometimes I hurt myself when I'm upset.",
+      "output": "Primary concern: Borderline Personality Disorder (BPD)\nKey symptoms: Emotional instability, identity disturbance, self-harm, relationship difficulties\nSeverity indicators: Self-harm behavior requires immediate attention\nRecommendation: Dialectical Behavior Therapy (DBT) is evidence-based for BPD. Seek professional help."
+    },
+    {
+      "input": "I hear voices that others don't hear. They tell me things about people.",
+      "output": "Primary concern: Psychotic symptoms (possible Schizophrenia or related disorder)\nKey symptoms: Auditory hallucinations\nSeverity indicators: Reality distortion\nRecommendation: URGENT - psychotic symptoms require immediate psychiatric evaluation."
+    },
+    {
+      "input": "I pull out my hair when I'm stressed. I have bald patches now and can't stop.",
+      "output": "Primary concern: Trichotillomania (Hair-Pulling Disorder)\nKey symptoms: Recurrent hair pulling, resulting hair loss, attempts to stop\nSeverity indicators: Visible physical consequences\nRecommendation: Habit reversal training and therapy can help. Consult a mental health professional."
+    },
+    {
+      "input": "After my mom died, I've been so sad. I cry every day and can't believe she's gone.",
+      "output": "Primary concern: Grief/Bereavement (normal grief response)\nKey symptoms: Sadness, crying, difficulty accepting loss\nNote: This appears to be normal grief, not a disorder\nRecommendation: Grief support groups and time. If symptoms persist beyond 6-12 months with severe impairment, consider professional help."
+    },
+    {
+      "input": "I drink alcohol every day to cope with stress. I can't seem to stop even though it's causing problems.",
+      "output": "Primary concern: Alcohol Use Disorder (Substance Use Disorder)\nKey symptoms: Daily use, using to cope, inability to stop, consequences\nSeverity indicators: Loss of control over use\nRecommendation: Substance use disorders require professional treatment. Consider addiction services or AA."
+    },
+    {
+      "input": "I wash my hands dozens of times a day until they bleed. I'm terrified of germs.",
+      "output": "Primary concern: Obsessive-Compulsive Disorder (OCD) - Contamination type\nKey symptoms: Fear of contamination (obsession), excessive washing (compulsion)\nSeverity indicators: Physical harm from compulsions\nRecommendation: OCD treatment (ERP therapy) is highly effective. Please seek specialized help."
+    },
+    {
+      "input": "I feel detached from my body, like I'm watching myself from outside. Nothing feels real.",
+      "output": "Primary concern: Depersonalization/Derealization Disorder (Dissociative Disorder)\nKey symptoms: Feeling detached from self, unreality feelings\nSeverity indicators: Persistent dissociative experiences\nRecommendation: Dissociative disorders benefit from trauma-informed therapy. Seek professional evaluation."
+    },
+    {
+      "input": "I'm constantly tired but I can't sleep. I worry about my health all the time even though doctors say I'm fine.",
+      "output": "Primary concern: Somatic Symptom Disorder OR Health Anxiety\nKey symptoms: Physical symptoms (fatigue, insomnia), excessive health worry, seeking reassurance\nSeverity indicators: Preoccupation despite medical clearance\nRecommendation: CBT for health anxiety can be very helpful. Consult a therapist."
+    },
+    {
+      "input": "I get sudden attacks where my heart pounds, I can't breathe, and I think I'm dying. They come out of nowhere.",
+      "output": "Primary concern: Panic Disorder\nKey symptoms: Unexpected panic attacks, physical symptoms (palpitations, breathing difficulty), fear of dying\nSeverity indicators: Recurrent, unexpected attacks\nRecommendation: Panic disorder is treatable with therapy and/or medication. See a mental health professional."
+    },
+    {
+      "input": "I'm extremely shy and have always avoided people. I want relationships but I'm too afraid of rejection.",
+      "output": "Primary concern: Avoidant Personality Disorder OR severe Social Anxiety\nKey symptoms: Social inhibition, fear of rejection, desire for connection despite avoidance\nSeverity indicators: Pervasive pattern affecting relationships\nRecommendation: Therapy focusing on social skills and self-esteem can help. Consider professional support."
+    },
+    {
+      "input": "I've been using cocaine regularly. I know it's bad but I can't stop. I need more and more to feel good.",
+      "output": "Primary concern: Stimulant Use Disorder (Cocaine)\nKey symptoms: Regular use, inability to stop, tolerance (needing more), continued use despite knowledge of harm\nSeverity indicators: Developing tolerance\nRecommendation: URGENT - addiction treatment needed. Contact substance abuse services immediately."
+    },
+    {
+      "input": "I feel sad sometimes but it passes. I'm generally happy with my life.",
+      "output": "Assessment: Normal emotional variation (not a mental health disorder)\nNote: Occasional sadness is part of normal human experience\nRecommendation: Continue self-care practices. If sadness becomes persistent or severe, reassess."
+    },
+    {
+      "input": "I'm feeling stressed about my exams next week. I'm worried I won't do well.",
+      "output": "Assessment: Normal stress response to situational stressor\nNote: This is adaptive anxiety related to a specific event\nRecommendation: Use stress management techniques (deep breathing, preparation, sleep). If anxiety becomes overwhelming, consider brief counseling."
+    },
+    {
+      "input": "I can't leave my house because I'm afraid of having a panic attack in public. I feel trapped.",
+      "output": "Primary concern: Agoraphobia (often with Panic Disorder)\nKey symptoms: Fear of situations where escape is difficult, avoidance of public spaces, feeling trapped\nSeverity indicators: Significant restriction of daily activities\nRecommendation: Agoraphobia is treatable with exposure therapy. Professional help is important."
+    },
+    {
+      "input": "My child seems hyperactive, can't sit still in class, interrupts constantly, and acts without thinking.",
+      "output": "Primary concern: ADHD - Hyperactive/Impulsive presentation (child)\nKey symptoms: Hyperactivity, impulsivity, difficulty with behavioral control\nSeverity indicators: Symptoms across multiple settings (home, school)\nRecommendation: Child psychiatric/psychological evaluation for ADHD assessment recommended."
+    },
+    {
+      "input": "I've been having thoughts about ending my life. I don't see a way out of my pain.",
+      "output": "CRISIS ALERT: Suicidal ideation detected\nImmediate action required: This is a mental health emergency\nRecommendation: URGENT - Please contact:\n- National Suicide Prevention Lifeline: 988 (US)\n- Go to nearest emergency room\n- Call emergency services (911)\n- Reach out to a trusted person immediately\nYou are not alone. Help is available 24/7."
+    },
+    {
+      "input": "I sometimes feel sad but I push through it. Work keeps me busy and I have good friends.",
+      "output": "Assessment: Resilient coping with normal emotional fluctuations\nNote: Sadness present but with protective factors (social support, engagement)\nRecommendation: Continue current coping strategies. Monitor if sadness increases in frequency or intensity."
+    },
+    {
+      "input": "I lie and manipulate people to get what I want. I don't really care if I hurt them.",
+      "output": "Primary concern: Antisocial traits (possible Antisocial Personality Disorder)\nKey symptoms: Manipulation, lack of empathy, disregard for others' wellbeing\nSeverity indicators: Pattern of exploitative behavior\nRecommendation: Personality disorders require long-term therapeutic intervention. Professional evaluation needed."
+    },
+    {
+      "input": "I'm terrified of flying. Even thinking about being on a plane makes me panic.",
+      "output": "Primary concern: Specific Phobia (Flying/Aviophobia)\nKey symptoms: Intense fear of specific situation (flying), avoidance or extreme distress\nSeverity indicators: Fear disproportionate to actual danger\nRecommendation: Exposure therapy is highly effective for specific phobias. Consider working with a therapist."
+    },
+    {
+      "input": "I experience racing thoughts, feel extremely productive for days, take big risks, and barely need sleep.",
+      "output": "Primary concern: Manic Episode (Bipolar Disorder)\nKey symptoms: Racing thoughts, decreased need for sleep, increased activity, risk-taking\nSeverity indicators: Significant functional change\nRecommendation: Manic episodes require psychiatric evaluation. Please seek professional help promptly."
+    },
+    {
+      "input": "I constantly need reassurance from my partner. I'm terrified they'll leave me. I check their phone.",
+      "output": "Primary concern: Relationship anxiety (possible Anxious Attachment OR BPD features)\nKey symptoms: Fear of abandonment, reassurance-seeking, monitoring behaviors\nSeverity indicators: Anxiety affecting relationship functioning\nRecommendation: Individual or couples therapy can help address attachment and trust issues."
+    }
+  ]
+}
